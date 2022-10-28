@@ -58,7 +58,7 @@ class EverywordBot(object):
 
     def post(self):
         index = self._get_current_index()
-        status_str = self._get_current_line(index)
+        status_str = "love " + self._get_current_line(index)
         if self.prefix:
             status_str = self.prefix + status_str
         if self.suffix:
